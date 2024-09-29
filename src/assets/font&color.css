@@ -1,0 +1,25 @@
+:root{
+  /* Font */
+  --title-weight: 400px;
+  --title-large-size: 3.2rem;
+  --title-little-size:3rem;
+  --body-name-font-size:16px;
+  /* 总体布局 */
+  --all-border-radius: 12px;
+  --all-outline-color1: rgb(208 195 204);
+  --all-outline-color2: rgb(126 116 125);
+  /* 头部 */
+  --header-bg-color:#FFDAD5;
+  --header-bg-secondary-color:#FFF7FA;
+  /* 主体 */
+  --body-bg-color:#EDDEE9;
+  --body-font-color:rgb(77 68 76);
+}
+
+*, *:before, *:after{
+  box-sizing: border-box;
+  overflow-wrap: break-word;  /*overflow-wrap 应用于行级元素，用来设置浏览器是否应该在一个本来不能断开的字符串中插入换行符，以防止文本溢出其行向盒。*/
+  line-height: 1.8;
+
+}
+

@@ -1,0 +1,34 @@
+@import "font&color.css";
+
+
+section *{
+  clear: both;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 960px;
+  padding: 2rem;
+  margin: auto;
+}
+
+a{
+  text-decoration: none;
+  outline: transparent;
+  color: black;
+  font-size: small;
+}                        /*最基础的设置，去掉链接的下划线，去掉链接的默认颜色，设置链接的字体大小*/
+
+@media screen and (max-width: 960px) {
+  .up {
+    display: none;             /*屏幕尺寸不足时对图标后的文字进行隐藏*/
+  }
+}
+
+@media print{
+  .pre-head{
+    display: none;        /*打印时隐藏头部的图标*/
+  }
+}
