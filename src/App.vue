@@ -1,10 +1,12 @@
 <script setup>
 import selfHead from './components/Head.vue'
 import card from './components/card.vue'
-import {ref} from "vue";
+import { reactive } from "vue";
 
+const classArray = reactive({
+  name : "education",
 
-
+})
 
 </script>
 
@@ -14,7 +16,7 @@ import {ref} from "vue";
       <self-head></self-head>
     </header>
     <main>
-      <card ></card>
+      <card v-bind = "classArray"></card>
     </main>
   </div>
 

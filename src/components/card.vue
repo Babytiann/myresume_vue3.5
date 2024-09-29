@@ -1,12 +1,12 @@
 <script setup>
-const card_class = defineProps({
+defineProps({
   name: String
 })
 
 </script>
 
 <template>
-  <section class="educator">
+  <section :class="name">
     <span class="title-large">教育经历</span>
     <div class="card">
       <div class="list-item-header">
@@ -25,9 +25,9 @@ const card_class = defineProps({
     <div class="card">
 
       <div class="list-item-content">
-                        <span class="title-s">
-                            <b>暂无</b>
-                        </span>
+        <span class="title-s">
+          <b>暂无</b>
+        </span>
       </div>
     </div>           <!--这个card类是一个模板，以后添加元素都可以直接使用-->
   </section>
